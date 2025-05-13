@@ -27,7 +27,7 @@ class MainScreen(Screen):
         right_count = num_buttons - left_count
         spacing = 1 / (max(left_count, right_count) + 1)
 
-        for i, (label, icon) in enumerate(zip(config["labels"], config["icons"])):
+        for i, (label, icon) in enumerate(zip(config["labels"], config["Icons"])):
             button = IconLabelButton(icon, label)
             y_pos = 1 - ((i // 2 + 1) * spacing)
             if i % 2 == 0:
@@ -49,9 +49,9 @@ class MainScreen(Screen):
 # Default config (used instead of config.json)
 config = {
     "labels": ["Lights", "Exterior Lights", "Water Pump", "Fridge", "Heater", "Fan", "Inverter", "USB Ports"],
-    "icons": [
+    "Icons": [
         "Icons/light.png",
-        "Icons/Outside_lights.png",
+        "Icons/Outside_Lights.png",
         "Icons/Water_Pump.png",
         "Icons/fridge.png",
         "Icons/Heater.png",

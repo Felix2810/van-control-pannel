@@ -9,9 +9,9 @@
         "Inverter",
         "USB Ports"
     ],
-    "icons": [
+    "Icons": [
         "Icons/light.png",
-        "Icons/Outside_lights.png",
+        "Icons/Outside_Lights.png",
         "Icons/Water_Pump.png",
         "Icons/fridge.png",
         "Icons/Heater.png",
