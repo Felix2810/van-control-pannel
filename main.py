@@ -19,7 +19,7 @@ class MainScreen(Screen):
         super(MainScreen, self).__init__(**kwargs)
         layout = FloatLayout()
 
-        background = Image(source='logo.png', allow_stretch=True, keep_ratio=False, size_hint=(1, 1))
+        background = Image(source='Logo.png', allow_stretch=True, keep_ratio=False, size_hint=(1, 1))
         layout.add_widget(background)
 
         num_buttons = len(config["labels"])
