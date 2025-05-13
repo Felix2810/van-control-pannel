@@ -51,7 +51,7 @@ config = {
     "labels": ["Lights", "Exterior Lights", "Water Pump", "Fridge", "Heater", "Fan", "Inverter", "USB Ports"],
     "icons": [
         "Icons/light.png",
-        "Icons/outside_lights.png",
+        "Icons/Outside_lights.png",
         "Icons/Water_Pump.png",
         "Icons/fridge.png",
         "Icons/Heater.png",
