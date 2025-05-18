@@ -11,7 +11,7 @@ from kivy.core.window import Window
 from kivy.graphics import Color, Line
 
 # Set fixed window size
-Window.size = (1024, 600)
+# Window.size = (1024, 600) not needed when running on a Raspberry Pi
 
 # Main screen
 class MainScreen(Screen):
@@ -19,8 +19,8 @@ class MainScreen(Screen):
         super(MainScreen, self).__init__(**kwargs)
         layout = FloatLayout()
 
-        background = Image(source='Logo.png', allow_stretch=True, keep_ratio=False, size_hint=(1, 1))
-        layout.add_widget(background)
+        background = Image(source='Logo1.png', allow_stretch=True, keep_ratio=False, size_hint=(1, 1))
+        layout.add_widget(background,index=0) # <-- ensures it's the bottom layer
 
         num_buttons = len(config["labels"])
         left_count = num_buttons // 2
